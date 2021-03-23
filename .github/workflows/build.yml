@@ -19,6 +19,8 @@ jobs:
     linux-gcc:
         runs-on: ubuntu-latest
         steps:
+            - name: install g++-5
+              run: sudo apt-get install -y g++-5
             - uses: actions/checkout@v1
               with:
                 fetch-depth: 1
